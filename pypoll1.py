@@ -1,7 +1,6 @@
 import os
 import csv
-os.chdir("C:/Users/jacob/uofa-phx-data-pt-09-2020-u-c/Homework/03-Python/PyPoll/Resources/")
-csvpath = "election_data.csv"
+csvpath = "data/election_data.csv"
 
 # Method 2: Improved Reading using CSV module
 
@@ -60,7 +59,7 @@ Winner: {winner}
 -------------------------
 """
 print(report)
-with open("C:/Users/jacob/uofa-phx-data-pt-09-2020-u-c/Homework/03-Python/pypoll/analysis/budget_analysis.txt", "w") as txt_file:
-    txt_file.write(str(csvreader))
+with open("electionResults.txt", "w+") as txt_file:
+    #txt_file.write(str(csvreader))
     txt_file.write(f"CSV Header: {csv_header}")
     txt_file.write(report)

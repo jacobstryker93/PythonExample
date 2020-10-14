@@ -1,0 +1,8 @@
+CSV Header: ['Date', 'Profit/Losses']
+Financial Analysis
+----------------------------
+Total Months: 86
+Total: $38382578
+Average  Change: $-2315
+Greatest Increase in Profits: $1170593 Feb-2012
+Greatest Decrease in Profits:  $-1196225 Sep-2013

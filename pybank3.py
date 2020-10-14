@@ -1,7 +1,6 @@
 import os
 import csv
-os.chdir("C:/Users/jacob/uofa-phx-data-pt-09-2020-u-c/Homework/03-Python/PyBank/Resources/")
-csvpath = "budget_data.csv"
+csvpath = "data/budget_data.csv"
 
 # Method 2: Improved Reading using CSV module
 
@@ -46,10 +45,9 @@ Greatest Decrease in Profits:  ${least} Sep-2013
 """
 print(report)
 
-with open("C:/Users/jacob/uofa-phx-data-pt-09-2020-u-c/Homework/03-Python/pybank/analysis/budget_analysis.txt", "w") as txt_file:
-    txt_file.write(str(csvreader))
+with open("budgetAnalysis.txt", "w") as txt_file:
+    #txt_file.write(str(csvreader))
     txt_file.write(f"CSV Header: {csv_header}")
     txt_file.write(report)
-
-
+    txt_file.close()
 
